@@ -1,0 +1,16 @@
+@import '../../../assets/styles/base';
+
+.mwHeader {
+  background-color: $color-dark-gray;
+  font-size: $font-size-large;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color_white;
+
+  &_reactLogo {
+    margin-right: 10px;
+    height: 70px;
+  }
+}

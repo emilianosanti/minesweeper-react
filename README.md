@@ -1,6 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Minesweeper Game
+
+A friendly Minesweeper game developed in React. [Demo link - TBD](TBD)
+
+## Setup Project
+Clone the repository
+
+`git clone git@github.com:emilianosanti/minesweeper-react.git`
+
+Make sure you have the correct node version, you can set the project node version with nvm version manager. If you don't have `nvm` you can install it from [here](https://github.com/creationix/nvm/blob/master/README.md)
+
+`nvm use`
+
+Install dependencies
+
+`npm i`
+
+You're ready to run the available scripts.
 
 ## Available Scripts
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 
