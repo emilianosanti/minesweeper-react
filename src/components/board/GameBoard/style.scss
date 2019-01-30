@@ -1,0 +1,17 @@
+@import '../../../assets/styles/base';
+
+.mwGameBoard {
+  margin: 10px 0 30px;
+
+  &_remainingBombs {
+    margin: 8px 0;
+    color: $color-dark-gray;
+  }
+
+  &_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

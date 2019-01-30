@@ -3,8 +3,8 @@ import { Route, Switch } from 'react-router';
 import { ConnectedRouter } from 'connected-react-router';
 
 // App components
-import Setup from './components/setup';
-import Board from './components/board';
+import Setup from './components/setup/container';
+import Board from './components/board/container';
 import Games from './components/games';
 
 // App constants

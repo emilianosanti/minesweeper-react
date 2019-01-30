@@ -1,5 +1,6 @@
 import { applyMiddleware, compose, createStore } from 'redux';
 import { routerMiddleware, connectRouter } from 'connected-react-router';
+import thunk from 'redux-thunk';
 
 // Combined app reducers.
 import reducers from './reducers';
@@ -20,6 +21,7 @@ const store = createStore(
   compose(
     applyMiddleware(
       routerMiddleware(history),
+      thunk,
       // Add custom middlewares here.
     ),
   ),

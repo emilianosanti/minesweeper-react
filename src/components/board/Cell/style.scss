@@ -1,0 +1,41 @@
+@import '../../../assets/styles/base';
+
+.mwCell {
+  box-sizing: border-box;
+  border: .5px solid $color-dark-gray;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  text-align: center;
+  font-size: $font-size-small;
+
+  &_boundaryBomb {
+    &1 { color: $color-light-1 }
+    &2 { color: $color-light-2 }
+    &3 { color: $color-light-3 }
+    &4 { color: $color-light-4 }
+    &5 { color: $color-dark-5 }
+    &6 { color: $color-dark-6 }
+    &7 { color: $color-dark-7 }
+    &8 { color: $color-dark-8 }
+  }
+
+  &:hover {
+    border: 2px solid $color-primary;
+  }
+
+  &_bombs {
+    color: $color-bomb;
+  }
+
+  &_flags {
+    color: $color-flags;
+  }
+
+  &_close {
+    background-color: #e5e6eb;
+  }
+}
