@@ -65,14 +65,20 @@ class GameBoard extends Component {
     return (
       <React.Fragment>
         {this.renderRemainingBombs()}
-        {this.renderWinGame()}
-        {this.renderGameOver()}
+        <div className='mwGameBoard_messageSection'>
+          {this.renderWinGame()}
+          {this.renderGameOver()}
+        </div>
       </React.Fragment>
     );
   }
 
   render() {
     const { grid } = this.props;
+
+    if (!grid.length) {
+      return <div>Please, setup your game first</div>;
+    }
 
     return (
       <div className='mwGameBoard'>
