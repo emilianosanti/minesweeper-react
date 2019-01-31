@@ -14,7 +14,7 @@ A friendly Minesweeper game developed in React. [Demo link - TBD](TBD)
 - [X] Design and implement an API for the game (think of a mobile app for your API)
 - [ ] Nice user experience (eg avoid page reload while playing)
 - [ ] Document all methods
-- [ ] Add Navigation toolbar
+- [X] Add Navigation toolbar
 
 ## Setup Project
 Clone the repository
