@@ -1,0 +1,21 @@
+@import '../../../assets/styles/base';
+
+.baseButton {
+  border: none;
+  line-height: normal;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  height: 48px;
+  width: 300px;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: $color-primary;
+  color: $color-white;
+
+  &.-disabled {
+    background-color: $color-disabled-grey;
+    cursor: default;
+  }
+}

@@ -1,0 +1,32 @@
+@import '../../../assets/styles/base';
+
+.mwSetupForm {
+  width: 500px;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+
+  &_title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  &_label {
+    margin: 8px 0;
+    color: $color-dark-gray;
+  }
+
+  &_input {
+    align-self: center;
+  }
+
+  &_maxValue {
+    font-size: $font-size-extra-small;
+  }
+
+  &_button {
+    align-self: center;
+    margin: 20px 0;
+  }
+}
