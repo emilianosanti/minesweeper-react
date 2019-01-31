@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 
+// Base components
+import Icon from '../../base/Icon';
+
+// Icons
+import { FaBomb } from 'react-icons/fa';
+import { MdFlag } from 'react-icons/md';
+
 // Component styles
 import './style.scss';
 
@@ -59,7 +66,7 @@ class Cell extends Component {
   }
 
   renderBomb(data) {
-    return data.hasBomb ? <span className='mwCell_bombs'>B</span> : null;
+    return data.hasBomb ? <Icon className='mwCell_bombs'><FaBomb /></Icon> : null;
   }
 
   renderNumber(data) {
@@ -67,7 +74,7 @@ class Cell extends Component {
   }
 
   renderFlag(data) {
-    return data.flagged ? <span className='mwCell_flags'>F</span> : null;
+    return data.flagged ? <Icon className='mwCell_flags'><MdFlag /></Icon> : null;
   }
 
   render() {

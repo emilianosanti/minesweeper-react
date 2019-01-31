@@ -18,6 +18,7 @@ function SetupRouter({ history }) {
         <Route exact path={routes.setup} component={Setup} />
         <Route exact path={routes.board} component={Board} />
         <Route exact path={routes.games} component={Games} />
+        <Route path='*' component={Setup} />
       </Switch>
     </ConnectedRouter>
   );

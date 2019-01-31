@@ -3,7 +3,7 @@ import React from 'react';
 function Games() {
   return (
     <div>
-      Games Page
+      My game list
     </div>
   );
 }

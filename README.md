@@ -9,7 +9,7 @@ A friendly Minesweeper game developed in React. [Demo link - TBD](TBD)
 - [ ] Persistence. Not to lose the game if browser is closed
 - [ ] Time tracking
 - [ ] Ability to start a new game and preserve/resume the old ones
-- [ ] Ability to select the game parameters: number of rows, columns, and mines
+- [X] Ability to select the game parameters: number of rows, columns, and mines
 - [ ] Ability to support multiple users/accounts
 - [X] Design and implement an API for the game (think of a mobile app for your API)
 - [ ] Nice user experience (eg avoid page reload while playing)
