@@ -1,6 +1,16 @@
 # React Minesweeper Game
 
-A friendly Minesweeper game developed in React. [Demo link - TBD](TBD)
+A friendly Minesweeper game developed in React. [Demo](https://minesweeper-react-c4fa4.firebaseapp.com/)
+
+## Code walkthrough - what we have so far:
+- React Application with 3 routes, /setup /board /games
+- React Router / Redux / Connected react router
+- Sass (BEM methodology for all components)
+- Reusable styles
+- React components are 100% decoupled of the application business logic.
+- Containers components and presentation component concept.
+- Base components + App components
+- The App is not fully responsive for mobile devices.
 
 ## Game status
 - [X] When a cell with no adjacent mines is revealed, all adjacent squares will be revealed (and repeat)
@@ -17,6 +27,7 @@ A friendly Minesweeper game developed in React. [Demo link - TBD](TBD)
 - [X] Add Navigation toolbar
 - [ ] Add my game list, it will show a list with all the previous games with some util information.
 - [ ] Add some unit test for the components.
+- [ ] Add eslint.
 
 ## Setup Project
 Clone the repository

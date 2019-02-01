@@ -59,6 +59,12 @@ class GameBoard extends Component {
     return <div className='mwGameBoard_remainingBombs'>Remaining Bombs: { remainingBombsChecked }</div>;
   }
 
+  renderDefaultMessage() {
+    const { gameWin, gameOver } = this.props;
+    const isMessageVisible = (!gameOver || gameWin) && (gameOver || !gameWin);
+    return isMessageVisible ? <div>Let's play!</div> : null;
+  }
+
   renderWinGame() {
     return this.props.gameWin ? <div>Congratulation, You win the game!</div> : null;
   }
@@ -82,6 +88,7 @@ class GameBoard extends Component {
     return (
       <React.Fragment>
         <div className='mwGameBoard_messageSection'>
+          {this.renderDefaultMessage()}
           {this.renderWinGame()}
           {this.renderGameOver()}
         </div>
