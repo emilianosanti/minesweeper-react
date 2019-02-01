@@ -1,0 +1,9 @@
+// Define all the applicacion breakpoints: Desktop, tablet, mobile.
+
+$breakpoint-desktop: 980px;
+
+@mixin media-desktop {
+  @media screen and (max-width: $breakpoint-desktop) {
+    @content;
+  }
+}

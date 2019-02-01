@@ -12,6 +12,11 @@
   text-align: center;
   font-size: $font-size-small;
 
+  @include media-desktop {
+    width: 20px;
+    height: 20px;
+  }
+
   &_boundaryBomb {
     &1 { color: $color-light-1 }
     &2 { color: $color-light-2 }
