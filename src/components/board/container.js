@@ -1,7 +1,10 @@
 import { connect } from 'react-redux';
 
 // App Actions
-import { gameWinAction } from '../../actions/board';
+import {
+  gameWinAction,
+  restartGame,
+} from '../../actions/board';
 
 // Components
 import GameBoard from './GameBoard';
@@ -20,6 +23,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     setGameWin: setting => dispatch(gameWinAction(true)),
+    onRestartClick: () => dispatch(restartGame()),
   };
 }
 

@@ -5,6 +5,9 @@ import PropTypes from 'prop-types';
 import Input from '../../base/Input';
 import Button from '../../base/Button';
 
+// Constants
+import Settings from '../../../constants/settings';
+
 // Styles
 import './style.scss';
 
@@ -12,11 +15,10 @@ class SetupForm extends Component {
   constructor(props) {
     super(props);
 
-    // TODO: move this to a config file
     this.state = {
-      rows: 10,
-      columns: 10,
-      bombs: 20,
+      rows: Settings.rowsDefaultValue,
+      columns: Settings.columnsDefaultValue,
+      bombs: Settings.bombsDefaultValue,
       isFormValid: true,
     };
 

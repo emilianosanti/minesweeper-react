@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+// Icons
+import { MdRefresh } from 'react-icons/md';
+
 // Styles
 import './style.scss';
 
 // Components
 import CellContainer from '../Cell/container';
+
+// Base components
+import Icon from '../../base/Icon';
 
 // App APIs
 import GameApi from '../../../APIs/game';
@@ -58,17 +64,28 @@ class GameBoard extends Component {
   }
 
   renderGameOver() {
-    return this.props.gameOver ? <div>Game Over!</div> : null;
+    const { onRestartClick, gameOver } = this.props;
+
+    if (gameOver) {
+      return (
+        <div onClick={onRestartClick} className='mwGameBoard_restart'>
+          Game Over!
+          <Icon className='mwGameBoard_restartIcon'><MdRefresh /></Icon>
+        </div>
+      );
+    }
+
+    return null;
   }
 
   renderGameBoardHeader() {
     return (
       <React.Fragment>
-        {this.renderRemainingBombs()}
         <div className='mwGameBoard_messageSection'>
           {this.renderWinGame()}
           {this.renderGameOver()}
         </div>
+        {this.renderRemainingBombs()}
       </React.Fragment>
     );
   }
@@ -97,6 +114,7 @@ GameBoard.propTypes = {
   gameOver: PropTypes.bool.isRequired,
   gameWin: PropTypes.bool.isRequired,
   setGameWin: PropTypes.func.isRequired,
+  onRestartClick: PropTypes.func.isRequired,
 }
 
 export default GameBoard;

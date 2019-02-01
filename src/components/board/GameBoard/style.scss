@@ -16,6 +16,19 @@
   }
 
   &_messageSection {
+    font-size: $font-size-large;
     min-height: 30px;
+  }
+
+  &_restart {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &_restartIcon {
+    font-size: 24px;
+    margin-left: 5px;
+    color: $color-primary;
   }
 }

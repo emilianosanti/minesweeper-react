@@ -70,7 +70,7 @@ Input.defaultProps = {
  * @property {String}        placeholder It defines the input placeholder.
  * @property {Function}      onChange    Callback that is executed on input change.
  */
-Input.PropTypes = {
+Input.propTypes = {
   value: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number,

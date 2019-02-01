@@ -42,3 +42,9 @@ export function gameWinAction(winValue) {
     winValue,
   }
 };
+
+export function restartGame() {
+  return (dispatch, getState) => {
+    dispatch(createBoardGame(getState().setup.settings));
+  }
+}

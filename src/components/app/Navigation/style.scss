@@ -6,12 +6,12 @@
   margin: 30px;
 
   &_item {
-    margin: 0 15px;
+    margin: 0 20px;
     border-bottom: 1px solid $color-disabled-grey;
     color: $color-disabled-grey;
     position: relative;
     cursor: pointer;
-    padding-right: 25px;
+    padding: 0 25px 3px;
 
     &.-active {
       border-bottom: 1px solid $color-primary;
