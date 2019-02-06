@@ -17,7 +17,7 @@ A friendly Minesweeper game developed in React. [Demo](https://minesweeper-react
 - [X] Ability to 'flag' a cell with a question mark or red flag
 - [X] Alert when game is over
 - [X] Persistence. Not to lose the game if browser is closed
-- [ ] Time tracking
+- [X] Time tracking
 - [ ] Ability to start a new game and preserve/resume the old ones
 - [X] Ability to select the game parameters: number of rows, columns, and mines
 - [ ] Ability to support multiple users/accounts
@@ -25,7 +25,7 @@ A friendly Minesweeper game developed in React. [Demo](https://minesweeper-react
 - [X] Nice user experience (eg avoid page reload while playing). Instead of blocking the user with the browser popup, the reload process is permitted since we are saving the game data, after the browser is refreshed the user is allowed to continue playing.
 - [ ] Document all methods
 - [X] Add Navigation toolbar
-- [ ] Add my game list, it will show a list with all the previous games with some util information.
+- [X] Add my game list, it will show a list with all the previous games with some util information.
 - [ ] Add some unit test for the components.
 - [ ] Add eslint.
 
