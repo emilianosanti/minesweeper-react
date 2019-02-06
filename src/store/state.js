@@ -10,4 +10,7 @@ export const state = {
     gameOver: false,
     gameWin: false,
   },
+  games: {
+    data: [],
+  },
 };

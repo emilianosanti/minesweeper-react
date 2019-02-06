@@ -5,7 +5,7 @@ import { ConnectedRouter } from 'connected-react-router';
 // App components
 import Setup from './components/setup/container';
 import Board from './components/board/container';
-import Games from './components/games';
+import Games from './components/games/container';
 
 // App constants
 import routes from './constants/routes';

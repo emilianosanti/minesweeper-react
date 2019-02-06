@@ -11,7 +11,8 @@ import routes from '../constants/routes';
 
 export function startGame(settings) {
   return dispatch => {
-    dispatch(setSettingData(settings));
+    const startTimestamp = Date.now();
+    dispatch(setSettingData({...settings, startTimestamp}));
     dispatch(createBoardGame(settings));
     dispatch(push(routes.board));
   }

@@ -7,6 +7,9 @@ import {
   BOARD_GAME_WIN,
 } from '../constants/actionTypes';
 
+// App Actions
+import { addGame } from './games';
+
 export function createBoardGame(settings) {
   return {
     type: BOARD_NEW_GAME,
@@ -15,10 +18,10 @@ export function createBoardGame(settings) {
 }
 
 export function gameOverAction(cell) {
-  return {
-    type: BOARD_GAME_OVER,
-    cell,
-  };
+  return (dispatch, getState) => {
+    dispatch({ type: BOARD_GAME_OVER, cell });
+    dispatch(addGame());
+  }
 };
 
 export function openCellAction(cell) {
@@ -37,9 +40,9 @@ export function setFlagAction(cell, flagValue) {
 };
 
 export function gameWinAction(winValue) {
-  return {
-    type: BOARD_GAME_WIN,
-    winValue,
+  return (dispatch, getState) => {
+    dispatch({ type: BOARD_GAME_WIN, winValue });
+    dispatch(addGame());
   }
 };
 

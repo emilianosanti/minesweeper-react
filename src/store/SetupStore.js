@@ -50,8 +50,8 @@ const store = createStore(
  * check for store differences or directly make usage of some redux lib like `redux-persist`.
  */
 store.subscribe(() => {
-  const { setup, board } = store.getState();
-  saveState({ board, setup });
+  const { setup, board, games } = store.getState();
+  saveState({ board, setup, games });
 });
 
 
