@@ -2,6 +2,8 @@
 
 A friendly Minesweeper game developed in React. [Demo](https://minesweeper-react-c4fa4.firebaseapp.com/)
 
+Note: I couldn't update the demo Url with the latest version because firebase hoisting service is down. You can check the status here https://status.firebase.google.com/
+
 ## Code walkthrough - what we have so far:
 - React Application with 3 routes, /setup /board /games
 - React Router / Redux / Connected react router
